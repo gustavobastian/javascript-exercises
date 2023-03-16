@@ -1,9 +1,5 @@
 const convertToCelsius = function(temperature) {
-  let out=temperature;
-
-  if(temperature==32){
-    out=0;
-  }
+  let out=(Math.round((temperature-32)*50/9))/10;  
 
   return out;
 };
