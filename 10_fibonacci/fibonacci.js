@@ -1,4 +1,9 @@
-const fibonacci = function(number) {
+const fibonacci = function(numberp) {
+    let number=parseInt(numberp);
+    if (number<0){
+        return "OOPS";
+    }
+
     if(number==0){
         return 0;
     }
