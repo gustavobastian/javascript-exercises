@@ -1,12 +1,26 @@
-const add = function(number1, number2 ) {
-	return number1 + number2;
+const add = function() {
+  
+  return arguments[0] + arguments[1];
 };
 
-const subtract = function() {
+const subtract = function(number1, number2) {
+
+  return number1 - number2;
 	
 };
 
-const sum = function() {
+const sum = function(array) {
+  console.log(array.length);
+  let out=0;  
+  if(array.length==0 ){
+    return 0;
+  }    
+  else{
+    for (let i=0;i<array.length;i++){
+      out+=array[i];
+    }
+    return out;
+  }
 	
 };
 
